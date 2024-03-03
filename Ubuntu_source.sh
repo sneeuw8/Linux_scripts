@@ -16,7 +16,7 @@ echo "
 echo "**********************************"
 read -s -n1 sourceChoice
 
-if [ $sourceChoice -ne 1 ] && [ $sourceChoice -ne 2 ] && [ $sourceChoice -ne 3 ];then
+if [ $sourceChoice -ne 1 ] && [ $sourceChoice -ne 2 ] && [ $sourceChoice -ne 3 ] && [ $sourceChoice -ne 4 ];then
     echo
     echo '输入有误，Good Bye.'
     exit
@@ -39,16 +39,16 @@ esac
 
 case $choose in
 	aliyun)
-		sourceweb='http://mirrors.aliyun.com'
+		sourceweb='https://mirrors.aliyun.com'
 	;;
 	tsinghua)
 		sourceweb='https://mirrors.tuna.tsinghua.edu.cn'
 	;;
 	163)
-		sourceweb='http://mirrors.163.com'
+		sourceweb='https://mirrors.163.com'
 	;;
 	ustc)
-		sourceweb='http://mirrors.ustc.edu.cn'
+		sourceweb='https://mirrors.ustc.edu.cn'
 	;;
 esac
 
